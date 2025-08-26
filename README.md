@@ -1,72 +1,64 @@
-# Integración de Smart Contracts con Frontend
+# NFT Profile - Gestión Segura de Perfiles Profesionales
+Este proyecto es un prototipo funcional que explora el uso de la tecnología blockchain y los NFTs interactivos para la gestión segura y descentralizada de perfiles profesionales.
 
-Este repositorio contiene el código de una clase sobre cómo integrar smart contracts con el frontend utilizando las tecnologías [Wagmi](https://wagmi.sh/react/getting-started), [Viem](https://viem.sh/docs/getting-started), [Rainbowkit](https://www.rainbowkit.com/docs/installation) y [React](https://react.dev/learn). Aquí aprenderás a conectar tu aplicación web con la blockchain de manera eficiente y segura.
+El objetivo es permitir a los usuarios conectar sus perfiles a través de un NFT único, facilitando el intercambio de información privada (como el correo electrónico o el teléfono) solo con contactos previamente autorizados. Funciona como una red profesional en la que el usuario mantiene el control total de sus datos.
 
-## Descripción General
+## 💡 Características Clave
+NFT Interactivo: Un token no fungible que sirve como identidad del perfil, permitiendo a los usuarios compartir datos de forma selectiva y segura.
 
-La integración de smart contracts con el frontend es esencial para crear aplicaciones descentralizadas (dApps) que interactúen directamente con la blockchain. En esta clase, utilizaremos Wagmi y Rainbowkit para simplificar esta integración, proporcionando herramientas y librerías que facilitan la conexión y gestión de wallets.
+Gestión Segura de Contactos: La información privada solo es accesible a través de transacciones en la red, garantizando un alto nivel de privacidad y privacidad.
 
-## Tecnologías Utilizadas
+Front-end intuitivo: Una interfaz de usuario limpia y funcional que permite la interacción con la blockchain sin fricciones.
 
-- **Wagmi**: Una colección de hooks y herramientas para trabajar con wallets y contratos en aplicaciones React.
-- **Viem**: Una librería que proporciona una API simple y robusta para interactuar con la blockchain.
-- **Rainbowkit**: Una herramienta que facilita la integración de múltiples wallets en tu aplicación.
-- **React**: Una biblioteca de JavaScript para construir interfaces de usuario.
+## ⚙️ Tecnologías y Stack
+#### Frontend:
 
-## Estructura del Proyecto
+* **React**: Biblioteca para el desarrollo de la interfaz de usuario.
 
-El proyecto sigue una estructura modular para mantener el código organizado y fácil de mantener:
+* **TypeScript**: Garantiza la solidez del código y la detección de errores en tiempo de desarrollo.
 
-```
-.
-├── package.json
-├── src
-│   ├── App.tsx
-│   ├── assets
-│   │   ├── abis
-│   │   │   └── erc20.ts
-│   ├── constants
-│   │   └── index.ts
-│   ├── main.tsx
-├── vite.config.ts
-```
+* **Tailwind CSS**: Framework de CSS para un diseño ágil y escalable.
+
+* **RainbowKit**: Para la integración y gestión de multiples billeteras de criptomonedas.
+
+* **Ethers.js**: Biblioteca para interactuar con los smart contracts en la red Ethereum.
+
+* **Wagmi**: Colección de hooks y herramientas para trabajar con wallets y contratos en aplicaciones React.
+  
+* **Viem**: Librería que proporciona una API simple y robusta para interactuar con la blockchain.
+
+
+#### Blockchain:
+
+* **Solidity**: Lenguaje de programación para los smart contracts.
+
+* **Foundry**: Herramienta para el desarrollo, prueba y despliegue de los contratos inteligentes.
+
+#### Almacenamiento Descentralizado:
+
+* **IPFS**: Para el almacenamiento de metadatos de los NFTs, garantizando la persistencia y descentralización.
 
 ## Beneficios de Usar este Stack
 
-- **Facilidad de Integración**: Wagmi y Rainbowkit simplifican la integración con múltiples wallets y contratos inteligentes.
-- **Interfaz de Usuario Amigable**: Rainbowkit proporciona una interfaz intuitiva para la gestión de wallets.
-- **Desarrollo Rápido**: React permite construir interfaces de usuario rápidas y dinámicas.
-- **Escalabilidad**: La estructura modular del proyecto facilita la expansión y mantenimiento a medida que crece la aplicación.
+* **Facilidad de Integración**: Wagmi y Rainbowkit simplifican la integración con múltiples wallets y contratos inteligentes.
+  
+* **Interfaz de Usuario Amigable**: Rainbowkit proporciona una interfaz intuitiva para la gestión de wallets.
+  
+* **Desarrollo Rápido**: React permite construir interfaces de usuario rápidas y dinámicas.
+  
+* **Escalabilidad**: La estructura modular del proyecto facilita la expansión y mantenimiento a medida que crece la aplicación.
 
-## Instrucciones para Correr el Proyecto
+## 🚀 Demostración
+El proyecto está desplegado en la red de pruebas de Arbitrum. Puedes ver una demostración completa de su funcionalidad en el siguiente vídeo.
 
-Para correr el proyecto localmente, sigue estos pasos:
+#### [Video de demostración del proyecto](https://youtu.be/dCy7JaMCcXg)
 
-1. Clona el repositorio:
+## 🤝 Contribuciones y Contacto
+Este proyecto es una prueba de concepto personal para demostrar mis habilidades en el desarrollo de aplicaciones blockchain. Si tienes interés en mi perfil o en este tipo de soluciones, no dudes en contactarme.
 
-   ```bash
-   git clone https://github.com/chrisarevalo11/curso-dapps-frontend.git
-   cd curso-dapps-frontend
-   ```
+### [LinkedIn](https://www.linkedin.com/in/juan-fuente-dev/)
 
-2. Instala las dependencias:
+### [Web](https://juanfuente.ovh)
 
-   ```bash
-   yarn install
-   ```
+### [GitHub](https://github.com/Juan-Fuente-T)
 
-3. Crea un archivo `.env` en la raíz del proyecto y agrega la variable de entorno `VITE_PROJECT_ID`. Puedes obtener un project ID en [WalletConnect Cloud](https://cloud.walletconnect.com/):
-
-   ```env
-   VITE_PROJECT_ID=tu_project_id
-   ```
-
-4. Inicia la aplicación:
-
-   ```bash
-   yarn dev
-   ```
-
-5. Abre tu navegador y navega a `http://localhost:5173` para ver la aplicación en funcionamiento.
-
-Gracias por llegar hasta acá y **keep buidling**!
