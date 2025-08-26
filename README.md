@@ -3,6 +3,10 @@ Este proyecto es un prototipo funcional que explora el uso de la tecnología blo
 
 El objetivo es permitir a los usuarios conectar sus perfiles a través de un NFT único, facilitando el intercambio de información privada (como el correo electrónico o el teléfono) solo con contactos previamente autorizados. Funciona como una red profesional en la que el usuario mantiene el control total de sus datos.
 
+![Card_dashboard](/public/SNC_Dashboard.webp)
+
+![Card_visor](/public/SNC_Visor2.webp)
+
 ## 💡 Características Clave
 NFT Interactivo: Un token no fungible que sirve como identidad del perfil, permitiendo a los usuarios compartir datos de forma selectiva y segura.
 
